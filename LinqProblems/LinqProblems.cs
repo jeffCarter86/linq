@@ -118,10 +118,10 @@ namespace LinqProblems
 
         public void ShortenWord()
         {
-            
-            var initialString = "Carter".ToUpper();
+            Console.WriteLine("Enter word");
+            string name = Console.ReadLine().ToUpper();
 
-            var condensedName = initialString.OrderBy(N => N).GroupBy(N => N).Select(N => N);
+            var condensedName = name.OrderBy(n => n).GroupBy(n => n).Select(n => n);
 
             foreach (var characterCount in condensedName)
             {
