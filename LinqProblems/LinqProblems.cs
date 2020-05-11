@@ -117,10 +117,10 @@ namespace LinqProblems
 
         public void ShortenWord()
         {
-            Console.WriteLine("Enter word");
-            string name = Console.ReadLine();
+            
+            var initialString = "Carter".ToUpper();
 
-            var condensedName = name.OrderBy(n => n).GroupBy(n => n).Select(n => n);
+            var condensedName = initialString.OrderBy(N => N).GroupBy(N => N).Select(N => N);
 
             foreach (var characterCount in condensedName)
             {

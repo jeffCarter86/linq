@@ -10,7 +10,7 @@ namespace LinqProblems
     {
         static void Main(string[] args)
         {
-
+            LinqProblems list = new LinqProblems();
         }
     }
 }
