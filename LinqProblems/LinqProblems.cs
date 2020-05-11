@@ -38,6 +38,17 @@ namespace LinqProblems
             }
             Console.ReadLine();
         }
+
+        public void WordsRemoveDuplicates(List<string> names)
+        {
+            var words = names;
+            var removedWords = words.Distinct();
+            foreach (var word in removedWords)
+            {
+                Console.WriteLine(word);
+            }
+            Console.ReadLine();
+        }
     }
 }
 
